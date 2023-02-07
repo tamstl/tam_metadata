@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "experimentalApproach.jsonld",
+    "prefLabel": {
+        "en": "experimentalApproach"
+    },
+    "description": "experimentalApproach",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "1.5 - Type"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "derived data"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "experimental data"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "raw data"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "simulation data"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

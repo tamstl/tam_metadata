@@ -1,0 +1,125 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "references_and_contributions_schema.jsonld",
+    "prefLabel": {
+        "en": "References and contributions"
+    },
+    "description": "references and contributions",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1ow9tRWOzyLgAY7oNtYgAu4x57dcsbfoTPBxjCvijLno/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='' target='_blank' > Reference </a><br><br>Describe the objetc's references and contributions</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/new_doi_exist.jsonld",
+            "items/doi.jsonld",
+            "items/familyName.jsonld",
+            "items/subject_age_max.jsonld",
+            "items/handedness.jsonld",
+            "items/proportion_male_subjects.jsonld",
+            "items/inclusion_exclusion_criteria.jsonld",
+            "items/number_of_rejected_subjects.jsonld",
+            "items/group_comparison.jsonld",
+            "items/group_description.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "new_doi_exist",
+                "isAbout": "items/new_doi_exist.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "doi",
+                "isAbout": "items/doi.jsonld",
+                "isVis": "new_doi_exist == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "familyName",
+                "isAbout": "items/familyName.jsonld",
+                "isVis": "new_doi_exist == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subject_age_max",
+                "isAbout": "items/subject_age_max.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "handedness",
+                "isAbout": "items/handedness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "proportion_male_subjects",
+                "isAbout": "items/proportion_male_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "inclusion_exclusion_criteria",
+                "isAbout": "items/inclusion_exclusion_criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_rejected_subjects",
+                "isAbout": "items/number_of_rejected_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_comparison",
+                "isAbout": "items/group_comparison.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_description",
+                "isAbout": "items/group_description.jsonld",
+                "isVis": "group_comparison == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

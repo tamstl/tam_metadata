@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "accessibility.jsonld",
+    "prefLabel": {
+        "en": "accessibility"
+    },
+    "description": "accessibility",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "1.4 - Accessibility<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>https://openminds.ebrains.eu/core/DatasetVersion</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "controlled access"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "free access"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "restricted access"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "under embargo"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

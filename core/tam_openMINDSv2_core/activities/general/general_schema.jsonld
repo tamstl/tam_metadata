@@ -1,0 +1,115 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "general_schema.jsonld",
+    "prefLabel": {
+        "en": "General"
+    },
+    "description": "general",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1ow9tRWOzyLgAY7oNtYgAu4x57dcsbfoTPBxjCvijLno/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='' target='_blank' > Reference </a><br><br>Desctribe your dataset / object</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/fullName.jsonld",
+            "items/description.jsonld",
+            "items/hasVersion.jsonld",
+            "items/accessibility.jsonld",
+            "items/experimentalApproach.jsonld",
+            "items/license.jsonld",
+            "items/repository.jsonld",
+            "items/keyword.jsonld",
+            "items/releaseDate.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "fullName",
+                "isAbout": "items/fullName.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "description",
+                "isAbout": "items/description.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "hasVersion",
+                "isAbout": "items/hasVersion.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "accessibility",
+                "isAbout": "items/accessibility.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "experimentalApproach",
+                "isAbout": "items/experimentalApproach.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "license",
+                "isAbout": "items/license.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "repository",
+                "isAbout": "items/repository.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "keyword",
+                "isAbout": "items/keyword.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "releaseDate",
+                "isAbout": "items/releaseDate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}
